@@ -31,6 +31,7 @@ WANT TO EDIT SCHEDPLAN.xlsx
 ples follow this tutorial:
 
 `https://kbroman.org/github_tutorial/pages/fork.html`
+`https://stackoverflow.com/questions/19660744/git-push-permission-denied-public-key`
 
 
 1. Setup git in your terminal (needs git account)
