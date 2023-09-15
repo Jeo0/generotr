@@ -32,6 +32,7 @@ ples follow this tutorial:
 
 `https://kbroman.org/github_tutorial/pages/fork.html`
 `https://stackoverflow.com/questions/19660744/git-push-permission-denied-public-key`
+`https://opensource.com/article/19/7/create-pull-request-github`
 
 
 1. Setup git in your terminal (needs git account)
