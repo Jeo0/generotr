@@ -1,6 +1,20 @@
+## objective
+ - create a free energy wheel to rotate a ferris wheel (new plan A)
+
+## steps
+1. Research sa theory how magnet fields work + ung trial ng mga iba na tinatry maachieve ung "free energy" 
+2. itest ung theory on small scale (ung fidget spinner + arbitrarily positioned magnets) 
+3.)  if oke ang test, magdesign na ng actual design natin
+3.1) IF HINDI okay ang test, edi balik sa 1.
+3.2) pag hindi talaga kaya, proceed tayo sa plan C (servo motor)
+4.) proceed sa paggawa ng the rest (with documentation)
 
 
 
+
+<br>
+<br>
+## how to use git
 
 create a new branch if want to show something with the proposed gawain
 
@@ -12,7 +26,7 @@ Create a "pull request" if want to change something dun sa "commit"
 <br>
 <br>
 
-## eg
+### eg
 WANT TO EDIT SCHEDPLAN.xlsx 
 ples follow this tutorial:
 
@@ -35,18 +49,24 @@ ples follow this tutorial:
 <br>
 
 # File structure
-## Prototypes:
-	- yt videos
+- AMBAGAN
+- sched plan
+- readme
+<br>
+<br>
+## Documentations
+	- paper
+	- (txt file for yt videos)
 
-## Feriish whel:
+
+## Feriish whel
 	- excel file (schematic + materials + 2d parts in detail)
 
-	### 3d parts:
-		- blend, obj, or any cad file
+	- 3d parts:
+		= blend, obj, or any cad file
 
-
-## Generator:
+## Generator
 	- excel file (schematic + materials + 2d parts in detail)
 	
-	### 3d parts:
-		- blend, obj, or any cad file
+	- 3d parts:
+		= blend, obj, or any cad file
