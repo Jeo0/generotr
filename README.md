@@ -1,12 +1,13 @@
 ### objective
- - create a free energy wheel to rotate a ferris wheel (new plan A)
+ - create a free energy wheel to rotate a ferris wheel (theory plan A)
+ - create a bldc motor to rotate a ferris wheel (plan B) 
 
 ### steps
-1. Research sa theory how magnet fields work + ung trial ng mga iba na tinatry maachieve ung "free energy" 
+1. Research sa theory how magnet fields work + ung trial ng mga iba na tinatry maachieve ung "free energy"<br> 
 2. itest ung theory on small scale (ung fidget spinner + arbitrarily positioned magnets) 
 	- if oke ang test, magdesign na ng actual design natin	
 	- IF HINDI okay ang test, edi balik sa 1.
-	- pag hindi talaga kaya, proceed tayo sa plan C (servo motor)
+	- pag hindi talaga kaya, proceed tayo sa plan B (bldc motor)
 3. proceed sa paggawa ng the rest (with documentation)
 
 
@@ -52,14 +53,13 @@ ples follow this tutorial:
 
 # File structure
 - AMBAGAN
-- sched plan
+- general objective
 - readme
 <br>
 <br>
 
 ### Documentations
 	- paper
-	- (txt file for yt videos)
 
 
 ### Feriish whel
