@@ -59,7 +59,8 @@ ples follow this tutorial:
 <br>
 
 ### Documentations
-	- paper
+	- papers
+    - schedule
 
 
 ### Feriish whel
