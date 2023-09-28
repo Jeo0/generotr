@@ -17,30 +17,12 @@
 <br>
 
 ## how to use git
-
-create a new branch if want to show something with the proposed gawain
-
-push if want to create gulo >:(
-
-"commit" for something to add up sa current respective branch project (preferably new txt file)
-Create a "pull request" if want to change something dun sa "commit"
-<br>
-
-
-### eg
-WANT TO EDIT SCHEDPLAN.xlsx 
-ples follow this tutorial:
-
+no need to follow this
+ako nalang maguupdate dito
 `https://kbroman.org/github_tutorial/pages/fork.html`
 `https://stackoverflow.com/questions/19660744/git-push-permission-denied-public-key`
 `https://opensource.com/article/19/7/create-pull-request-github`
 
-
-1. Setup git in your terminal (needs git account)
-2. Clone the repository (if not yet cloned)
-3. Open your local copy (the repository u cloned) of schedplan.xlsx
-4. do your changes and save it
-5. to upload your changes for the repository, create a pull request
 
  
 
