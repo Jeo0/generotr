@@ -58,6 +58,10 @@ ples follow this tutorial:
 <br>
 <br>
 
+### Deprecated
+dont refer to this <br>
+
+
 ### Documentations
 	- papers
     - schedule
