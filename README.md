@@ -37,7 +37,6 @@ ako nalang maguupdate dito <br>
 <br>
 
 # File structure
-- AMBAGAN
 - general objective
 - readme
 <br>
