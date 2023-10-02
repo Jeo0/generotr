@@ -22,7 +22,7 @@ void loop() {
     delay(10);
 	}
   for (int i = (TOTAL_LEDS-1); i > -1; i--){
-    leds[i].setRGB(0,0,0);
+    leds[i].setRGB(0,0,0);  
 		FastLED.show();
     delay(10);
   }
