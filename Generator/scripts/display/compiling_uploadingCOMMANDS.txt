@@ -6,3 +6,6 @@ arduino-cli upload -p /dev/ttyUSB0 --fqbn esp32:esp32:nodemcu-32s blink
 
 
 // blink is the NAME of the file
+https://wellys.com/posts/esp32_cli/
+https://arduino.github.io/arduino-cli/0.34/getting-started/
+https://randomnerdtutorials.com/installing-the-esp32-board-in-arduino-ide-windows-instructions/
