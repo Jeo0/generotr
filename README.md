@@ -58,6 +58,9 @@ ako nalang maguupdate dito <br>
 
 ### Generator
 	- excel file (schematic + materials + 2d parts in detail)
+
+    - Scripts:
+        - microcontroller scripts (l2c, potentiometer, sensor, esc)
 	
 	- 3d parts:
 		= blend, obj, or any cad file
