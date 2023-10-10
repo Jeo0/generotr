@@ -58,6 +58,9 @@ ako nalang maguupdate dito <br>
 
     - Scripts:
         - microcontroller scripts (l2c, potentiometer, sensor, esc)
+
+    - Illustrations:
+        - illustrations (rotor, stator)
 	
 	- 3d parts:
 		= blend, obj, or any cad file
