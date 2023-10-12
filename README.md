@@ -45,6 +45,7 @@ ako nalang maguupdate dito <br>
 ### Documentations
 	- papers
     - schedule
+    - link for the paper
 
 
 ### Feriish whel
