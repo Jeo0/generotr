@@ -1,0 +1,93 @@
+fauni
+ali
+
+: magdesign at gawin na ung ferris wheel
+
+specifications lang nng mga expected output:
+1. lightweight (basta wag lalagpas ng 1kg ung mismong wheel, pero as a whole pede)
+2. 8mm shaft ung gamitin 
+3. pedeng madisassemble and assemble ang key parts under 1-3 mins
+4. keep the expenses low (anything basta under 1k siguro is engouh na)
+5. lahat ng design considerations will be up for u two to decide, ndi kami (eg. sizing constraints, why use certain materials, etc.)
+
+
+
+para sa documentation:
+6. take note sa mga dimensions, weight, materials, and expenses
+7. 2d blueprint lang sufficient na (in any form)
+8. isend ninyo sa gc or kina gab at rein ung documentation in the preferred way na gusto nilang mareceive
+
+
+if merong mga info na need kayong malaman and need ninyo ipaalam sa mga assigned persons, sabihan niyo lang sila (eg. sinabihan kayo nina patrick na they will need some shaft here, there, etc.)
+
+dedline ng 1st design is october 21 2023; 23:59
+dedline ng mismong ferriswheel is november 30 2023
+
+
+
+
+
+
+
+gab
+rein
+
+: kayo maggawa ng paper
+
+specifications:
+1. may mga idadagdag akong mga key topics doon by theme, kayo nalang ang magfill-in the blanks don
+2. magintay lang kayo ng documentation (from motor and ferrishweehl) nina patrick pair at ali pair
+3. lahat ng design considerations will be up for u two to decide (eg. anong format ng paper, references, ). Up to debate nalang ung mga revisions ng paper (eg., si bry ndi satisfied about sa pano ninyo ninarrate ung isang topic, syempre magusap kayong 3).
+
+para sa documentation:
+4. keep one copy online na pede nating lahat maview & edit (send sa gc)
+
+
+
+
+
+
+
+bry
+patrick
+
+: kayo gumawa ng bldc motor ver. original
+
+specifications:
+1. everything will be up for u 2 to decide kung anoano ung mga design (consider ung mga mismong coil length, ano mga magnet gagamitin, pano ipopower ung motor, etc.etc.)
+2. wag muna bumili until matapos ang designs ng both versions (orig & fool-proof).
+3. irevise according dun sa agreement ng discussion with ver.fool-proof
+
+
+documenntaion:
+4. take note sa mga dimensions, weight, materials, expenses (+ ung link kung san makakabili)
+5. 2d blueprint lang sufficient na (in any form; kung sakaling mag33d print, edi magprovide din ng 3d model)
+6. isend ninyo sa gc or kina gab at rein ung documentation in the preferred way na gusto nilang mareceive
+
+
+purpose:
+- time consuming maggawa kung anoano ung safe operating temps/power, so try muna natin manggaya ng iba which is up to the 2 of u (consider everything that is presented, from controller, power, and the motor itself).
+- pag hinalo natin ng version fool-proof ung version original, edi malayo na tayo sa plagiarism (see the purpose of ver. fool-proof for the detailed rationale)
+
+
+
+
+
+
+
+
+jesi
+
+: gagawa ng bldc motor ver. fool-proof
+: keep note of everything
+
+specifications:
+1. try to revise ver. orig
+
+
+Purpose:
+- to know what material and material lenght is safe
+- how far is __________ effective
+- why use this type of battery
+- to prepare any questions na tatanungin ni sir tungkol sa project.
+

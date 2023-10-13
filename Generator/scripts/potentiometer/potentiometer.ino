@@ -1,7 +1,23 @@
 
+// io pins
+// https://microcontrollerslab.com/esp32-pinout-use-gpio-pins/
+
 // potentiometer:
 // https://esp32io.com/tutorials/esp32-potentiometer
 // https://randomnerdtutorials.com/esp32-adc-analog-read-arduino-ide/
+// pin VP (A0; GPIX36);
+
+// half effect sensor
+// https://www.circuitstate.com/pinouts/doit-esp32-devkit-v1-wifi-development-board-pinout-diagram-and-reference/
+// https://www.electroschematics.com/linear-hall-sensor/
+// pin 26
+
+// esc
+// https://www.electronicshub.org/esp32-pwm-tutorial/
+// https://www.electronicshub.org/esp32-servo-control/
+// https://microcontrollerslab.com/esp32-pwm-arduino-ide-led-fading-example/
+// https://esp32.com/viewtopic.php?t=20450
+// pin 25
 
 /* lcd: https://www.circuitschools.com/interfacing-16x2-lcd-module-with-esp32-with-and-without-i2c/
   * 
@@ -22,6 +38,9 @@
     PIN15 A-> 5V
     PIN16 K-> GND
 */
+#define Poten_pin 36
+#define ESC_pin 25
+#define Hall_pin 26
 
 #include <LiquidCrystal.h>
  
@@ -50,9 +69,9 @@ void setup() {
 void loop() {
 
 
-  // read the input on analog pin GPIO32:
-  // for 
-  int analogValue = analogRead(32);
+  // read the input on analog pin GPIX36 (A0; VP):
+  // for potentiometer
+  int analogValue = analogRead(Poten_pin);
   // Rescale to potentiometer's voltage (from 0V to 3.3V):
   //float voltage = floatMap(analogValue, 0, 4095, 0, 3.3);
   float voltage = floatMap(analogValue, 0, 4095, 0, 5);
