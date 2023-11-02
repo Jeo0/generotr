@@ -112,7 +112,7 @@ void loop() {
   Serial.print(": ");
   Serial.println(percent);
   Serial.println("%");
-  delay(1);
+  //delay(1);
   
 
   ///////////////////////////////////////////////
