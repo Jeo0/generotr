@@ -1,4 +1,5 @@
 
+
 // io pins
 // https://microcontrollerslab.com/esp32-pinout-use-gpio-pins/
 
@@ -41,6 +42,7 @@
 */
 #define Poten_pin 36
 #define ESC_pin 25
+#define Hall_pin 26
 #define MIN_SPEED 0 // speed just slow enough to turn motor off
 #define MAX_SPEED 100 // speed where my motor drew 3.6 amps at 12v.
 
@@ -49,13 +51,6 @@
 #include <ESP32Servo.h>     // ESP32Servo library installed by Library Manager
 //#include "ESC.h"            // RC_ESP library installed by Library Manager
 //#include <Servo.h>
-#ifdef ESP32
-  #include <esp_now.h>
-  #include <WiFi.h>
-#else
-  #include <esp_now.h>
-  #include <ESP8266WiFi.h>
-#endif
  
 // initialize the library with the numbers of the interface pins
 // lcd
@@ -88,23 +83,15 @@ void setup() {
   //ledcSetup(0, 1000, 8);//PWM channel is 0, Frequency 1000Hz, 8 bit(Duty with 256 levels of resolution, the value is 0-255)
   //ledcAttachPin(ESC_pin,0);//Assign channel 0 to ESC_pin
 
-
-
   ESC.attach(ESC_pin, 1000, 2000);
-
-  Serial.println();
-  Serial.print("ESP Board MAC Address:  ");
-  Serial.println(WiFi.macAddress());
 
 
 }
 
-  float incoming_rpmValue;
-  esp_now_peer_info_t peerInfo;
+
 
 
 void loop() {
-  uint8_t broadcastAddress[] = {0xEC, 0x94, 0xCB, 0x6D,0xCD,0xE8};
 
 
   // read the input on analog pin GPIX36 (A0; VP):
@@ -112,18 +99,20 @@ void loop() {
   int analogValue = analogRead(Poten_pin);
   // Rescale to potentiometer's voltage (from 0V to 3.3V):
   //float voltage = floatMap(analogValue, 0, 4095, 0, 3.3);
-  //float voltage = floatMap(analogValue, 0, 4095, 0, 3.3);
+  float voltage = floatMap(analogValue, 0, 4095, 0, 3.3);
   float percent = floatMap(analogValue, 0, 4095, MIN_SPEED, MAX_SPEED);
+  // float v5 = floatMap(voltage, 0, 3.3, 0, 5);
+  // float p5 = floatMap(percent, 0, 100, 0, 100);
 
   // print out the value you read:
-  //Serial.print("Analog: ");
-  //Serial.print(analogValue);
-  /*Serial.print(", Voltage: ");
-  Serial.println(voltage);*/
+  Serial.print("Analog: ");
+  Serial.print(analogValue);
+  Serial.print(", Voltage: ");
+  Serial.println(voltage);
 
-  //Serial.print(": ");
-  //Serial.println(percent);
-  //Serial.println("%");
+  Serial.print(": ");
+  Serial.println(percent);
+  Serial.println("%");
   //delay(1);
   
 
@@ -133,30 +122,11 @@ void loop() {
   // for lcd
   // set the cursor to column 0, line 1
   // (note: line 1 is the second row, since counting begins with 0):
-  //lcd.setCursor(0, 1);
+  lcd.setCursor(0, 1);
   // print the number of seconds since reset:
-  //lcd.print(voltage);
+  lcd.print(voltage);
   lcd.setCursor(0, 0);
   lcd.print(percent);
-
- if(count == 500){
-    // pass
-    count = 0;
-
-    RPM_VAL.rpm_val = rpm_val;
-    esp_err_t result = esp_now_send(broadcastAddress, (uint8_t *) &RPM_VAL, sizeof(RPM_VAL));
-
-
-
-    if (result == ESP_OK) {
-      Serial.println("Sent with success");
-    }
-    else {
-      Serial.println("Error sending the data");
-    }
-
-    updateDisplay(percent);
- }
 
 
   // for esc
@@ -164,13 +134,8 @@ void loop() {
   //myESC.speed(val); // sets the ESC speed
   //delay(10); // Wait for a while
 
-
-
   float esc_out = map(percent, MIN_SPEED, MAX_SPEED, 0, 180);
   ESC.write(esc_out);
-
-
-  
 
 
 
@@ -184,12 +149,3 @@ void loop() {
 // https://www.circuitschools.com/interfacing-16x2-lcd-module-with-esp32-with-and-without-i2c/
 
  
-
-
-void updateDisplay(float percent){
-  lcd.setCursor(0,0);
-  lcd.print(percent);
-
-  lcd.setCursot(0,1);
-  lcd.print(rpm_val);
-}
