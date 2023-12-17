@@ -1,4 +1,5 @@
-
+// https://www.youtube.com/watch?v=pIflB4FQpNE&t=369s
+// mowertacho
 double revolutions=0;
 double rpm=0; // max value 32,767 16 bit
 long  startTime=0;
